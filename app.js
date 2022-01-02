@@ -8,9 +8,9 @@ const mongoose = require('mongoose')
 require('dotenv').config()
 
 // Connect to DB
-// mongoose.connect(process.env.MDB_CONNECT, {useNewUrlParser: true, useUnifiedTopology: true})
-// .then(() => console.log('🔌 Connected to DB'))
-// .catch(err => console.log(`😡 The DB is not connected : ${err}`))
+mongoose.connect(process.env.MDB_CONNECT, {useNewUrlParser: true, useUnifiedTopology: true})
+.then(() => console.log('🔌 Connected to DB'))
+.catch(err => console.log(`😡 The DB is not connected : ${err}`))
 
 //==================================
 // 💾 Routes import
